@@ -150,6 +150,8 @@ footer{padding:40px 0 56px;color:var(--ink-soft);font-size:14px}
 })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init");
 (function(){var s=document.querySelector('script[src="https://app.cal.com/embed/embed.js"]'); if(s){s.addEventListener("load",function(){window.calReady=true;});}})();
+// Preload (George, 27/11/2026: "add preload after everything else loads. lazy load it"): issued only once the page and everything on it has finished loading.
+window.addEventListener("load",function(){Cal("preload",{calLink:"george-racz-jnhztm/15min"});});
 </script>
 </head>
 <body class="ask-chat verb-hire">
